@@ -1,29 +1,55 @@
-<!doctype html>
-<html lang="en" data-layout="split" data-theme="tech-geo" data-modules="hero,services,portfolio,about,contact,cta">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-layout="split"
+  data-theme="tech-geo"
+  data-modules="hero,services,portfolio,about,contact,cta"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cartocode - Geospatial Technology & Web Development Solutions</title>
-    <meta name="description" content="Cartocode integrates cartography, GIS mapping, drone surveying, and web development into one innovative platform. Professional geospatial solutions for businesses and organizations.">
-    <meta name="keywords" content="cartography, GIS mapping, drone surveying, web development, geospatial technology, mapping solutions">
-    <link rel="canonical" href="https://cartocode.com">
-    
-    <meta property="og:title" content="Cartocode - Geospatial Technology & Web Development">
-    <meta property="og:description" content="Professional cartography, GIS mapping, drone surveying, and web development services integrated into one innovative platform.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cartocode.com">
-    <meta property="og:image" content="https://cartocode.com/og-image.jpg">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cartocode - Geospatial Technology & Web Development">
-    <meta name="twitter:description" content="Professional cartography, GIS mapping, drone surveying, and web development services integrated into one innovative platform.">
-    <meta name="twitter:image" content="https://cartocode.com/twitter-image.jpg">
-    
+    <meta
+      name="description"
+      content="Cartocode integrates cartography, GIS mapping, drone surveying, and web development into one innovative platform. Professional geospatial solutions for businesses and organizations."
+    />
+    <meta
+      name="keywords"
+      content="cartography, GIS mapping, drone surveying, web development, geospatial technology, mapping solutions"
+    />
+    <link rel="canonical" href="https://cartocode.com" />
+
+    <meta
+      property="og:title"
+      content="Cartocode - Geospatial Technology & Web Development"
+    />
+    <meta
+      property="og:description"
+      content="Professional cartography, GIS mapping, drone surveying, and web development services integrated into one innovative platform."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cartocode.com" />
+    <meta property="og:image" content="https://cartocode.com/og-image.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cartocode - Geospatial Technology & Web Development"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional cartography, GIS mapping, drone surveying, and web development services integrated into one innovative platform."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cartocode.com/twitter-image.jpg"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <script type="application/ld+json">
-    {
+      {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Cartocode",
@@ -32,572 +58,980 @@
         "logo": "https://cartocode.com/logo.png",
         "sameAs": [],
         "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer service",
-            "email": "info@cartocode.com"
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "info@cartocode.com"
         },
         "service": [
-            {
-                "@type": "Service",
-                "name": "Cartography & Map Design",
-                "description": "Professional cartographic services and custom map design"
-            },
-            {
-                "@type": "Service", 
-                "name": "Drone Mapping & Survey",
-                "description": "Aerial surveying and drone-based mapping solutions"
-            },
-            {
-                "@type": "Service",
-                "name": "GIS Analysis",
-                "description": "Geographic Information Systems analysis and consulting"
-            },
-            {
-                "@type": "Service",
-                "name": "Web Development",
-                "description": "Custom web applications and geospatial web solutions"
-            }
+          {
+            "@type": "Service",
+            "name": "Cartography & Map Design",
+            "description": "Professional cartographic services and custom map design"
+          },
+          {
+            "@type": "Service",
+            "name": "Drone Mapping & Survey",
+            "description": "Aerial surveying and drone-based mapping solutions"
+          },
+          {
+            "@type": "Service",
+            "name": "GIS Analysis",
+            "description": "Geographic Information Systems analysis and consulting"
+          },
+          {
+            "@type": "Service",
+            "name": "Web Development",
+            "description": "Custom web applications and geospatial web solutions"
+          }
         ]
-    }
+      }
     </script>
-    
+
     <style>
-        .grid-pattern {
-            background-image: 
-                linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-        }
+      .grid-pattern {
+        background-image: linear-gradient(
+            rgba(59, 130, 246, 0.1) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-4px);
+      }
     </style>
-</head>
-<body class="bg-gray-50 text-gray-900">
+  </head>
+  <body class="bg-gray-50 text-gray-900">
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <i data-lucide="map" class="h-8 w-8 text-blue-600 mr-2"></i>
-                        <span class="text-xl font-bold text-gray-900">Cartocode</span>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
-                        <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Services</a>
-                        <a href="#portfolio" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Portfolio</a>
-                        <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
-                        <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
-                    </div>
-                </div>
-                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
-                    <i data-lucide="menu" class="h-6 w-6"></i>
-                </button>
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <i data-lucide="map" class="h-8 w-8 text-blue-600 mr-2"></i>
+              <span class="text-xl font-bold text-gray-900">Cartocode</span>
             </div>
-            <div id="mobile-menu" class="md:hidden hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                    <a href="#home" class="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium">Home</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Services</a>
-                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Portfolio</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">About</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Contact</a>
-                </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="#home"
+                class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                >Home</a
+              >
+              <a
+                href="#services"
+                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                >Services</a
+              >
+              <a
+                href="#portfolio"
+                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                >Portfolio</a
+              >
+              <a
+                href="#about"
+                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                >About</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                >Contact</a
+              >
             </div>
-        </nav>
+          </div>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" class="h-6 w-6"></i>
+          </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+            <a
+              href="#home"
+              class="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+              >Services</a
+            >
+            <a
+              href="#portfolio"
+              class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+              >Portfolio</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="home" class="hero-gradient grid-pattern relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div class="text-white">
-                        <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                            Bridging <span class="text-green-300">Geospatial</span> Technology & Web Solutions
-                        </h1>
-                        <p class="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
-                            Cartocode integrates cartography, GIS mapping, drone surveying, and web development into one innovative platform for modern businesses.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center">
-                                Get Custom Solutions
-                                <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
-                            </a>
-                            <a href="#services" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center">
-                                Explore Services
-                            </a>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="relative w-full" style="padding-top:56.25%">
-                            <img src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/hero/43090aeefb_0.png" 
-                                 alt="Geospatial technology and mapping visualization" 
-                                 class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl block rounded-lg"
-                                 width="800" height="450" loading="eager" decoding="async"
-                                 style="aspect-ratio:800/450;">
-                        </div>
-                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="zap" class="h-6 w-6 text-green-500"></i>
-                                <span class="font-semibold text-gray-900">Integrated Platform</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section
+        id="home"
+        class="hero-gradient grid-pattern relative overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+              <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                Bridging
+                <span class="text-green-300">Geospatial</span> Technology & Web
+                Solutions
+              </h1>
+              <p class="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
+                Cartocode integrates cartography, GIS mapping, drone surveying,
+                and web development into one innovative platform for modern
+                businesses.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#contact"
+                  class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+                >
+                  Get Custom Solutions
+                  <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                </a>
+                <a
+                  href="#services"
+                  class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+                >
+                  Explore Services
+                </a>
+              </div>
             </div>
-        </section>
-
-        <section id="services" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Comprehensive geospatial and web development solutions tailored to your needs
-                    </p>
+            <div class="relative">
+              <div class="relative w-full" style="padding-top: 56.25%">
+                <img
+                  src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/hero/43090aeefb_0.png"
+                  alt="Geospatial technology and mapping visualization"
+                  class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl block rounded-lg"
+                  width="800"
+                  height="450"
+                  loading="eager"
+                  decoding="async"
+                  style="aspect-ratio: 800/450"
+                />
+              </div>
+              <div
+                class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg"
+              >
+                <div class="flex items-center space-x-2">
+                  <i data-lucide="zap" class="h-6 w-6 text-green-500"></i>
+                  <span class="font-semibold text-gray-900"
+                    >Integrated Platform</span
+                  >
                 </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200">
-                        <div class="bg-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                            <i data-lucide="map-pin" class="h-6 w-6 text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">Cartography & Map Design</h3>
-                        <p class="text-gray-600 mb-6">Professional cartographic services with custom map design, spatial visualization, and interactive mapping solutions.</p>
-                        <ul class="text-sm text-gray-600 space-y-2">
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Custom Map Creation</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Thematic Mapping</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Interactive Web Maps</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border border-green-200">
-                        <div class="bg-green-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                            <i data-lucide="plane" class="h-6 w-6 text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">Drone Mapping & Survey</h3>
-                        <p class="text-gray-600 mb-6">Advanced aerial surveying using drone technology for accurate mapping, monitoring, and data collection.</p>
-                        <ul class="text-sm text-gray-600 space-y-2">
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Aerial Photography</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>3D Modeling</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Topographic Surveys</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200">
-                        <div class="bg-purple-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                            <i data-lucide="layers" class="h-6 w-6 text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">GIS Analysis</h3>
-                        <p class="text-gray-600 mb-6">Comprehensive Geographic Information Systems analysis and consulting for data-driven decision making.</p>
-                        <ul class="text-sm text-gray-600 space-y-2">
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Spatial Analysis</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Data Management</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>GIS Consulting</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border border-orange-200">
-                        <div class="bg-orange-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                            <i data-lucide="code" class="h-6 w-6 text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">Web Development</h3>
-                        <p class="text-gray-600 mb-6">Custom web applications and geospatial web solutions that bring your mapping data to life online.</p>
-                        <ul class="text-sm text-gray-600 space-y-2">
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Web Applications</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>API Development</li>
-                            <li class="flex items-center"><i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>Dashboard Creation</li>
-                        </ul>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="portfolio" class="py-20 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Showcasing our expertise in geospatial technology and web development
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
-                        <div class="relative w-full" style="padding-top:56.25%">
-                            <img src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/portfolio-1/413aa18b68_0.png" 
-                                 alt="Urban planning mapping project" 
-                                 class="absolute inset-0 w-full h-full object-cover block rounded-lg"
-                                 width="400" height="225" loading="lazy" decoding="async"
-                                 style="aspect-ratio:400/225;">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Urban Planning Dashboard</h3>
-                            <p class="text-gray-600 mb-4">Interactive web application for city planners with zoning analysis and development tracking.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">GIS Analysis</span>
-                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Web Dev</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
-                        <div class="relative w-full" style="padding-top:56.25%">
-                            <img src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/portfolio-2/e2828f963b_0.png" 
-                                 alt="Agricultural drone mapping survey" 
-                                 class="absolute inset-0 w-full h-full object-cover block rounded-lg"
-                                 width="400" height="225" loading="lazy" decoding="async"
-                                 style="aspect-ratio:400/225;">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Agricultural Survey</h3>
-                            <p class="text-gray-600 mb-4">Comprehensive drone mapping for precision agriculture and crop monitoring across 500+ acres.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Drone Survey</span>
-                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">3D Modeling</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
-                        <div class="relative w-full" style="padding-top:56.25%">
-                            <img src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/portfolio-3/ad75c36780_0.png" 
-                                 alt="Environmental monitoring web application" 
-                                 class="absolute inset-0 w-full h-full object-cover block rounded-lg"
-                                 width="400" height="225" loading="lazy" decoding="async"
-                                 style="aspect-ratio:400/225;">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Environmental Monitoring</h3>
-                            <p class="text-gray-600 mb-4">Real-time environmental data visualization platform for conservation organizations.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Cartography</span>
-                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Web App</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-center mt-12">
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center">
-                        View More Projects
-                        <i data-lucide="external-link" class="ml-2 h-5 w-5"></i>
-                    </a>
-                </div>
+      <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Our Services
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive geospatial and web development solutions tailored to
+              your needs
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200"
+            >
+              <div
+                class="bg-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i data-lucide="map-pin" class="h-6 w-6 text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Cartography & Map Design
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Professional cartographic services with custom map design,
+                spatial visualization, and interactive mapping solutions.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-2">
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Custom Map Creation
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Thematic Mapping
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Interactive Web Maps
+                </li>
+              </ul>
             </div>
-        </section>
 
-        <section id="about" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">About Cartocode</h2>
-                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                            Founded on the vision of bridging traditional cartography with cutting-edge technology, Cartocode represents the evolution of geospatial services. We combine decades of mapping expertise with modern web development and drone technology.
-                        </p>
-                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                            Our mission is to make geospatial data accessible, actionable, and visually compelling for businesses, organizations, and communities worldwide.
-                        </p>
-                        
-                        <div class="grid sm:grid-cols-2 gap-6 mb-8">
-                            <div class="flex items-start space-x-3">
-                                <div class="bg-blue-100 p-2 rounded-lg">
-                                    <i data-lucide="target" class="h-6 w-6 text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-semibold text-gray-900 mb-1">Precision</h3>
-                                    <p class="text-gray-600 text-sm">Accurate data collection and analysis for informed decision-making.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-3">
-                                <div class="bg-green-100 p-2 rounded-lg">
-                                    <i data-lucide="zap" class="h-6 w-6 text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-semibold text-gray-900 mb-1">Innovation</h3>
-                                    <p class="text-gray-600 text-sm">Cutting-edge technology integrated with proven methodologies.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-3">
-                                <div class="bg-purple-100 p-2 rounded-lg">
-                                    <i data-lucide="users" class="h-6 w-6 text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-semibold text-gray-900 mb-1">Collaboration</h3>
-                                    <p class="text-gray-600 text-sm">Working closely with clients to deliver tailored solutions.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-3">
-                                <div class="bg-orange-100 p-2 rounded-lg">
-                                    <i data-lucide="globe" class="h-6 w-6 text-orange-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-semibold text-gray-900 mb-1">Impact</h3>
-                                    <p class="text-gray-600 text-sm">Creating solutions that make a positive difference in communities.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="relative">
-                        <div class="relative w-full" style="padding-top:75%">
-                            <img src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/about/3464e08881_0.png" 
-                                 alt="Team working on geospatial technology and mapping solutions" 
-                                 class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-lg block rounded-lg"
-                                 width="600" height="450" loading="lazy" decoding="async"
-                                 style="aspect-ratio:600/450;">
-                        </div>
-                        <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-blue-600 to-green-600 p-6 rounded-lg shadow-lg text-white">
-                            <div class="text-center">
-                                <div class="text-2xl font-bold">50+</div>
-                                <div class="text-sm">Projects Completed</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="card-hover bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border border-green-200"
+            >
+              <div
+                class="bg-green-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i data-lucide="plane" class="h-6 w-6 text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Drone Mapping & Survey
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Advanced aerial surveying using drone technology for accurate
+                mapping, monitoring, and data collection.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-2">
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Aerial Photography
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >3D Modeling
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Topographic Surveys
+                </li>
+              </ul>
             </div>
-        </section>
 
-        <section class="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to Transform Your Geospatial Needs?</h2>
-                <p class="text-xl mb-8 text-blue-100">
-                    Let's discuss how Cartocode can provide custom mapping and web solutions for your organization.
+            <div
+              class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200"
+            >
+              <div
+                class="bg-purple-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i data-lucide="layers" class="h-6 w-6 text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">GIS Analysis</h3>
+              <p class="text-gray-600 mb-6">
+                Comprehensive Geographic Information Systems analysis and
+                consulting for data-driven decision making.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-2">
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Spatial Analysis
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Data Management
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >GIS Consulting
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border border-orange-200"
+            >
+              <div
+                class="bg-orange-600 w-12 h-12 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i data-lucide="code" class="h-6 w-6 text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Web Development
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Custom web applications and geospatial web solutions that bring
+                your mapping data to life online.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-2">
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Web Applications
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >API Development
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i
+                  >Dashboard Creation
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Featured Projects
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Showcasing our expertise in geospatial technology and web
+              development
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="card-hover bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="relative w-full" style="padding-top: 56.25%">
+                <img
+                  src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/portfolio-1/413aa18b68_0.png"
+                  alt="Urban planning mapping project"
+                  class="absolute inset-0 w-full h-full object-cover block rounded-lg"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 400/225"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Urban Planning Dashboard
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Interactive web application for city planners with zoning
+                  analysis and development tracking.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center">
-                        Start Your Project
-                        <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
-                    </a>
-                    <a href="tel:+1234567890" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center">
-                        <i data-lucide="phone" class="mr-2 h-5 w-5"></i>
-                        Call Us Today
-                    </a>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >GIS Analysis</span
+                  >
+                  <span
+                    class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                    >Web Dev</span
+                  >
                 </div>
+              </div>
             </div>
-        </section>
 
-        <section id="contact" class="py-20 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Ready to start your next geospatial project? Contact us for a consultation.
-                    </p>
+            <div
+              class="card-hover bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="relative w-full" style="padding-top: 56.25%">
+                <img
+                  src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/portfolio-2/e2828f963b_0.png"
+                  alt="Agricultural drone mapping survey"
+                  class="absolute inset-0 w-full h-full object-cover block rounded-lg"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 400/225"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Agricultural Survey
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Comprehensive drone mapping for precision agriculture and crop
+                  monitoring across 500+ acres.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                    >Drone Survey</span
+                  >
+                  <span
+                    class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+                    >3D Modeling</span
+                  >
                 </div>
-                
-                <div class="grid lg:grid-cols-2 gap-16">
-                    <div>
-                        <form class="space-y-6">
-                            <div class="grid sm:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                                    <input type="text" id="firstName" name="firstName" required 
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                </div>
-                                <div>
-                                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                                    <input type="text" id="lastName" name="lastName" required 
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="email" name="email" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                            </div>
-                            
-                            <div>
-                                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company/Organization</label>
-                                <input type="text" id="company" name="company" 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                            </div>
-                            
-                            <div>
-                                <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Interest</label>
-                                <select id="service" name="service" 
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                    <option value="">Select a service</option>
-                                    <option value="cartography">Cartography & Map Design</option>
-                                    <option value="drone">Drone Mapping & Survey</option>
-                                    <option value="gis">GIS Analysis</option>
-                                    <option value="web">Web Development</option>
-                                    <option value="multiple">Multiple Services</option>
-                                </select>
-                            </div>
-                            
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
-                                <textarea id="message" name="message" rows="5" required 
-                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                          placeholder="Tell us about your project requirements..."></textarea>
-                            </div>
-                            
-                            <button type="submit" 
-                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center">
-                                Send Message
-                                <i data-lucide="send" class="ml-2 h-5 w-5"></i>
-                            </button>
-                        </form>
-                    </div>
-                    
-                    <div class="space-y-8">
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
-                            <div class="space-y-4">
-                                <div class="flex items-start space-x-4">
-                                    <div class="bg-blue-100 p-3 rounded-lg">
-                                        <i data-lucide="mail" class="h-6 w-6 text-blue-600"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900">Email</h4>
-                                        <p class="text-gray-600">cartocode@gmail.com</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-4">
-                                    <div class="bg-green-100 p-3 rounded-lg">
-                                        <i data-lucide="phone" class="h-6 w-6 text-green-600"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900">Phone</h4>
-                                        <p class="text-gray-600">+234 (810) 053 8012</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-4">
-                                    <div class="bg-purple-100 p-3 rounded-lg">
-                                        <i data-lucide="map-pin" class="h-6 w-6 text-purple-600"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900">Office</h4>
-                                        <p class="text-gray-600">Akure<br>Ondo State, Nigeria</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-6">Why Choose Cartocode?</h3>
-                            <div class="space-y-4">
-                                <div class="flex items-center space-x-3">
-                                    <i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>
-                                    <span class="text-gray-700">Integrated geospatial and web solutions</span>
-                                </div>
-                                <div class="flex items-center space-x-3">
-                                    <i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>
-                                    <span class="text-gray-700">Expert team with proven track record</span>
-                                </div>
-                                <div class="flex items-center space-x-3">
-                                    <i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>
-                                    <span class="text-gray-700">Custom solutions for every project</span>
-                                </div>
-                                <div class="flex items-center space-x-3">
-                                    <i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>
-                                    <span class="text-gray-700">Cutting-edge technology and methods</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+
+            <div
+              class="card-hover bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="relative w-full" style="padding-top: 56.25%">
+                <img
+                  src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/portfolio-3/ad75c36780_0.png"
+                  alt="Environmental monitoring web application"
+                  class="absolute inset-0 w-full h-full object-cover block rounded-lg"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 400/225"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Environmental Monitoring
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Real-time environmental data visualization platform for
+                  conservation organizations.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >Cartography</span
+                  >
+                  <span
+                    class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm"
+                    >Web App</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              href="#contact"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
+            >
+              View More Projects
+              <i data-lucide="external-link" class="ml-2 h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                About Cartocode
+              </h2>
+              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                Founded on the vision of bridging traditional cartography with
+                cutting-edge technology, Cartocode represents the evolution of
+                geospatial services. We combine decades of mapping expertise
+                with modern web development and drone technology.
+              </p>
+              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Our mission is to make geospatial data accessible, actionable,
+                and visually compelling for businesses, organizations, and
+                communities worldwide.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div class="flex items-start space-x-3">
+                  <div class="bg-blue-100 p-2 rounded-lg">
+                    <i data-lucide="target" class="h-6 w-6 text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Precision</h3>
+                    <p class="text-gray-600 text-sm">
+                      Accurate data collection and analysis for informed
+                      decision-making.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div class="bg-green-100 p-2 rounded-lg">
+                    <i data-lucide="zap" class="h-6 w-6 text-green-600"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Innovation</h3>
+                    <p class="text-gray-600 text-sm">
+                      Cutting-edge technology integrated with proven
+                      methodologies.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div class="bg-purple-100 p-2 rounded-lg">
+                    <i data-lucide="users" class="h-6 w-6 text-purple-600"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-gray-900 mb-1">
+                      Collaboration
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                      Working closely with clients to deliver tailored
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div class="bg-orange-100 p-2 rounded-lg">
+                    <i data-lucide="globe" class="h-6 w-6 text-orange-600"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Impact</h3>
+                    <p class="text-gray-600 text-sm">
+                      Creating solutions that make a positive difference in
+                      communities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="relative w-full" style="padding-top: 75%">
+                <img
+                  src="https://cdn.ailandingpage.ai/landingpage_io/user_generate/9e4b1a07-e694-479a-bc45-728402cd652f/9e4b1a07-e694-479a-bc45-728402cd652f/about/3464e08881_0.png"
+                  alt="Team working on geospatial technology and mapping solutions"
+                  class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-lg block rounded-lg"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 600/450"
+                />
+              </div>
+              <div
+                class="absolute -bottom-6 -right-6 bg-gradient-to-r from-blue-600 to-green-600 p-6 rounded-lg shadow-lg text-white"
+              >
+                <div class="text-center">
+                  <div class="text-2xl font-bold">50+</div>
+                  <div class="text-sm">Projects Completed</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+            Ready to Transform Your Geospatial Needs?
+          </h2>
+          <p class="text-xl mb-8 text-blue-100">
+            Let's discuss how Cartocode can provide custom mapping and web
+            solutions for your organization.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+            >
+              Start Your Project
+              <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+            </a>
+            <a
+              href="tel:+1234567890"
+              class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+            >
+              <i data-lucide="phone" class="mr-2 h-5 w-5"></i>
+              Call Us Today
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Get In Touch
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Ready to start your next geospatial project? Contact us for a
+              consultation.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-16">
+            <div>
+              <form
+                action="https://formspree.io/f/xdkykged"
+                method="POST"
+                class="space-y-6"
+              >
+                <input
+                  type="hidden"
+                  name="_replyto"
+                  value="cartocode@gmail.com"
+                />
+                <div class="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      for="firstName"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="lastName"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="company"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Company/Organization</label
+                  >
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="service"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Service Interest</label
+                  >
+                  <select
+                    id="service"
+                    name="service"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="cartography">
+                      Cartography & Map Design
+                    </option>
+                    <option value="drone">Drone Mapping & Survey</option>
+                    <option value="gis">GIS Analysis</option>
+                    <option value="web">Web Development</option>
+                    <option value="multiple">Multiple Services</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Project Details</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Tell us about your project requirements..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center"
+                >
+                  Send Message
+                  <i data-lucide="send" class="ml-2 h-5 w-5"></i>
+                </button>
+              </form>
+              <script>
+                const form = document.querySelector("form");
+                form.addEventListener("submit", async (e) => {
+                  e.preventDefault();
+                  const formData = new FormData(form);
+
+                  const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: { Accept: "application/json" },
+                  });
+
+                  if (response.ok) {
+                    alert(
+                      "✅ Message sent successfully! I’ll get back to you soon."
+                    );
+                    form.reset();
+                  } else {
+                    alert("❌ Oops! Something went wrong. Please try again.");
+                  }
+                });
+              </script>
+            </div>
+
+            <div class="space-y-8">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-6">
+                  Contact Information
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-lg">
+                      <i data-lucide="mail" class="h-6 w-6 text-blue-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Email</h4>
+                      <p class="text-gray-600">cartocode@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-4">
+                    <div class="bg-green-100 p-3 rounded-lg">
+                      <i data-lucide="phone" class="h-6 w-6 text-green-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Phone</h4>
+                      <p class="text-gray-600">+234 (810) 053 8012</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-4">
+                    <div class="bg-purple-100 p-3 rounded-lg">
+                      <i
+                        data-lucide="map-pin"
+                        class="h-6 w-6 text-purple-600"
+                      ></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Office</h4>
+                      <p class="text-gray-600">
+                        Akure<br />Ondo State, Nigeria
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-6">
+                  Why Choose Cartocode?
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex items-center space-x-3">
+                    <i
+                      data-lucide="check-circle"
+                      class="h-5 w-5 text-green-500"
+                    ></i>
+                    <span class="text-gray-700"
+                      >Integrated geospatial and web solutions</span
+                    >
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i
+                      data-lucide="check-circle"
+                      class="h-5 w-5 text-green-500"
+                    ></i>
+                    <span class="text-gray-700"
+                      >Expert team with proven track record</span
+                    >
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i
+                      data-lucide="check-circle"
+                      class="h-5 w-5 text-green-500"
+                    ></i>
+                    <span class="text-gray-700"
+                      >Custom solutions for every project</span
+                    >
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i
+                      data-lucide="check-circle"
+                      class="h-5 w-5 text-green-500"
+                    ></i>
+                    <span class="text-gray-700"
+                      >Cutting-edge technology and methods</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="md:col-span-2">
-                    <div class="flex items-center mb-4">
-                        <i data-lucide="map" class="h-8 w-8 text-blue-400 mr-2"></i>
-                        <span class="text-xl font-bold">Cartocode</span>
-                    </div>
-                    <p class="text-gray-400 mb-6 max-w-md">
-                        Bridging geospatial technology and web development to create innovative solutions for modern businesses and organizations.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/in/daudu-dayo-550aab1b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target = "_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
-                            <i data-lucide="linkedin" class="h-6 w-6"></i>
-                        </a>
-                        <a href="https://x.com/carto_code?t=VU1qVcuqYGmxWXqZ8LsXjA&s=09" target = "_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
-                            <i data-lucide="twitter" class="h-6 w-6"></i>
-                        </a>
-                        <a href="https://github.com/Dayordee" target = "_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
-                            <i data-lucide="github" class="h-6 w-6"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="font-semibold mb-4">Services</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#services" class="hover:text-white transition-colors">Cartography</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Drone Mapping</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">GIS Analysis</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Web Development</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="font-semibold mb-4">Company</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-                    </ul>
-                </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="md:col-span-2">
+            <div class="flex items-center mb-4">
+              <i data-lucide="map" class="h-8 w-8 text-blue-400 mr-2"></i>
+              <span class="text-xl font-bold">Cartocode</span>
             </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Cartocode. All rights reserved.</p>
+            <p class="text-gray-400 mb-6 max-w-md">
+              Bridging geospatial technology and web development to create
+              innovative solutions for modern businesses and organizations.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.linkedin.com/in/daudu-dayo-550aab1b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
+                <i data-lucide="linkedin" class="h-6 w-6"></i>
+              </a>
+              <a
+                href="https://x.com/carto_code?t=VU1qVcuqYGmxWXqZ8LsXjA&s=09"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                aria-label="Twitter"
+              >
+                <i data-lucide="twitter" class="h-6 w-6"></i>
+              </a>
+              <a
+                href="https://github.com/Dayordee"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                aria-label="GitHub"
+              >
+                <i data-lucide="github" class="h-6 w-6"></i>
+              </a>
             </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">Services</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#services" class="hover:text-white transition-colors"
+                  >Cartography</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-white transition-colors"
+                  >Drone Mapping</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-white transition-colors"
+                  >GIS Analysis</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-white transition-colors"
+                  >Web Development</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">Company</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" class="hover:text-white transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2024 Cartocode. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
+            // Close mobile menu if open
+            mobileMenu.classList.add("hidden");
+          }
         });
-        
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-        });
-        
-        // Initialize Lucide icons
-        lucide.createIcons();
+      });
+
+      // Form submission
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for your message! We will get back to you soon.");
+      });
+
+      // Initialize Lucide icons
+      lucide.createIcons();
     </script>
-</body>
+  </body>
 </html>
